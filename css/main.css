@@ -105,6 +105,14 @@ hr {
 
 }
 
+.text-left-center{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.text-left-center p {
+	text-align: left;
+}
 /* --- section bg var --- */
 
 .bg-white {
