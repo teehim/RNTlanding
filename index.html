@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>SmartAdmin Landing</title>
+
+		<!-- #Bootstrap Core CSS -->
+		<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- #SLIDER REVOLUTION 4.x CSS SETTINGS -->
+		<link rel="stylesheet" type="text/css" href="css/extralayers.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen">
+
+		<!-- #RELATED CSS -->
+		<link type="text/css" href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link type="text/css" href="css/nivo-lightbox.css" rel="stylesheet">
+		<link type="text/css" href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet">
+		<link type="text/css" href="css/animate.css" rel="stylesheet">
+
+		<!-- #SMARTADMIN LANDING CSS -->
+		<link type="text/css" href="css/main.css" rel="stylesheet">
+		<link type="text/css" href="color/default.css" rel="stylesheet">
+
+		<!-- #FAVICONS -->
+		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+		<!-- #GOOGLE FONT -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+		<script src="http://maps.google.com/maps/api/js"></script>
+		<script>
+function initialize() {
+
+  var myCenter= new google.maps.LatLng(13.606744, 99.663097);
+
+  var mapProp = {
+    center:myCenter,
+    zoom:15,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+  var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+  marker.setMap(map);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<style>
+th{
+	color:#EF3E36;
+}
+td {
+    padding: 10px;
+}
+h3{
+	font-size: 25pt;
+}
+h4{
+	color:#EF3E36;
+	font-size: 30pt;
+}
+p{
+	font-size: 20pt;
+}
+</style>
+
+	</head>
+
+	<!--
+
+	TABLE OF CONTENTS.
+	
+	Use search to find needed section.
+	
+	===================================================================
+	
+	|  01. #MENU                                                      |
+	|  02. #INTRO                                                     |
+	|  03. #PRICING                                                   |
+	|  04. #TEAM                                                      |
+	|  05. #FEATURES                                                  |
+	|  06. #SCREENSHOT                                                |
+	|  07. #UPDATES                                                   |
+	|  08. #QUOTES                                                    |
+	|  09. #CONTACT                                                   |
+	|  10. #BOTTOM CONTENT                                            |
+	|  11. #FOOTER                                                    |
+	|  12. #Core Javascript                                           |
+	|  13. #REVOLUITION SLIDER                                        |
+	|  14. #PAGE SCRIPT                                               |
+	
+	===================================================================
+	
+	-->
+
+	<body data-spy="scroll">
+
+		<div class="container">
+
+			<!-- Section: #MENU -->
+			<ul id="gn-menu" class="gn-menu-main" >
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li class="gn-search-item">
+									<input placeholder="Search" type="search" class="gn-search">
+									<a class="gn-icon gn-icon-search"><span>Search</span></a>
+								</li>
+								<li>
+									<a href="#pricing" class="gn-icon gn-icon-download">Pricing</a>
+								</li>
+								<li>
+									<a href="#team" class="gn-icon gn-icon-article">Team</a>
+								</li>
+								<li>
+									<a href="#features" class="gn-icon gn-icon-help">Features</a>
+								</li>
+								<li>
+									<a href="#screenshots" class="gn-icon gn-icon-pictures">Screenshots</a>
+								</li>
+								<li>
+									<a href="#updates" class="gn-icon gn-icon-cog">Updates</a>
+								</li>
+								<li>
+									<a href="#contact" class="gn-icon gn-icon-archive">Contact</a>
+								</li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<li class="hidden-xs">
+					<a href="index.html"><img src="img/banner/banner05.png" alt="logo" style="width: 135px; margin-top: -4px;" /></a>
+				</li>
+				<li>
+					<!-- <ul class="company-social">
+						<li class="social-facebook">
+							<a href="javascript:void(0);" target="_blank"><i class="fa fa-facebook"></i></a>
+						</li>
+						<li class="social-twitter">
+							<a href="javascript:void(0);" target="_blank"><i class="fa fa-twitter"></i></a>
+						</li>
+						<li class="social-dribble">
+							<a href="javascript:void(0);" target="_blank"><i class="fa fa-dribbble"></i></a>
+						</li>
+						<li class="social-google">
+							<a href="javascript:void(0);" target="_blank"><i class="fa fa-google-plus"></i></a>
+						</li>
+					</ul> -->
+				</li>
+			</ul>
+			<!-- Section: #MENU -->
+		
+		</div>
+
+		<section class="intro">
+
+				<!--
+				#################################
+				- THEMEPUNCH BANNER -
+				#################################
+				-->
+				<div id="myCarousel" class="carousel fade">
+							<ol class="carousel-indicators">
+								<!-- <li data-target="#myCarousel" data-slide-to="0" class="active"></li> -->
+<!-- 								<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+								<li data-target="#myCarousel" data-slide-to="2" class=""></li> -->
+							</ol>
+							<div class="carousel-inner" align="center" style="background:#000000; margin-top:20px">
+								<div class="item active">
+									<img src="img/banner/banner01.jpg" alt="" width="50%">
+	<!-- 								<div class="carousel-caption caption-right">
+										<a href="javascript:void(0);" class="btn btn-info btn-sm">Read more</a>
+									</div> -->
+								</div>
+<!-- 								<div class="item">
+									<img src="img/banner/banner02.jpg" alt=""  width="80%">
+									<div class="carousel-caption caption-left">
+										<a href="javascript:void(0);" class="btn btn-danger btn-sm">Read more</a>
+									</div>
+								</div>
+
+								<div class="item">
+									<img src="img/banner/banner03.jpg" alt=""  width="80%">
+									<div class="carousel-caption">				
+									</div>
+								</div> -->
+							</div>
+				</div>
+			</section>
+
+
+		<!-- Section: #PRICING -->
+		<section id="pricing" class="home-section text-center bg-gray">
+			<div class="heading-about marginbot-50">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+
+							<div class="section-heading">
+								<h2>ค่าสมัคร และสิ่งที่จะได้รับ </h2>
+							<!-- 	<p>
+									Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has
+								</p> -->
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+
+			<div class="row">
+				
+		        <div class="col-xs-12 col-sm-6 col-md-3">
+		            <div class="panel pricing-big">		                	
+		                <div class="panel-heading bg-red">
+		                    <h3 class="panel-title-white">
+		                        32 Km. (Set A)</h3>
+		                </div>
+		                <div class="panel-body no-padding text-align-center">
+		                    <div class="the-price">
+		                        <h1>
+		                            ฿1200</h1>
+		                    </div>
+							<div class="price-features">
+								<ul class="list-unstyled text-left">
+						          <li><i class="fa fa-check text-success"></i>  <strong> เสื้อที่ระลึก</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>อาหาร 2 มื้อ  </strong> </li>
+						          <li><i class="fa fa-check text-success"></i>  <strong> Goodie Bag</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>ชิปจับเวลา</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong> เหรียญ</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>เสื้อ Finisher</strong> </li>
+						          <li><i class="fa fa-times text-danger"></i> <strong>รัดน่อง Compressport </strong> </li>
+						        </ul>
+							</div>
+		                </div>
+		                <!--<div class="panel-footer text-align-center">
+		                    <a href="javascript:void(0);" class="btn btn-primary btn-block" role="button">Download <span> now!</span></a>
+		                	<div>
+		                		Or <a href="javascript:void(0);">Sign up</a>
+		                	</div>
+		                </div>-->
+		            </div>
+		        </div>
+
+		        <div class="col-xs-12 col-sm-6 col-md-3">
+		            <div class="panel pricing-big">	
+		            <img src="img/star-icon.png" class="ribbon" alt="ribbon" width="50px" height="50px">	            	
+		                <div class="panel-heading bg-dark">
+		                    <h3 class="panel-title">
+		                        32 Km. (Set B)</h3>
+		                </div>
+		                <div class="panel-body no-padding text-align-center">
+		                    <div class="the-price">
+		                        <h1>
+		                            ฿1900</h1>
+		                    </div>
+							<div class="price-features">
+								<ul class="list-unstyled text-left">
+						          <li><i class="fa fa-check text-success"></i>  <strong> เสื้อที่ระลึก</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>อาหาร 2 มื้อ  </strong> </li>
+						          <li><i class="fa fa-check text-success"></i>  <strong> Goodie Bag</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>ชิปจับเวลา</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong> เหรียญ</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>เสื้อ Finisher</strong> </li>
+						          <li><i class="fa fa-star text-warning"></i> <strong>รัดน่อง Compressport </strong> </li>
+						        </ul>
+							</div>
+		                </div>
+		                <!--<div class="panel-footer text-align-center">
+		                    <a href="javascript:void(0);" class="btn btn-primary btn-block" role="button">Download <span> now!</span></a>
+		                	<div>
+		                		Or <a href="javascript:void(0);">Sign up</a>
+		                	</div>
+		                </div>-->
+		            </div>
+		        </div>
+		        
+		        <div class="col-xs-12 col-sm-6 col-md-3">
+		            <div class="panel pricing-big">
+		            	
+		                <div class="panel-heading bg-red">
+		                    <h3 class="panel-title-white">
+		                        21 Km. (Set A)</h3>
+		                </div>
+		                <div class="panel-body no-padding text-align-center">
+		                    <div class="the-price">
+		                        <h1>
+		                            ฿900</h1>
+		                    </div>
+							<div class="price-features">
+								<ul class="list-unstyled text-left">
+						          <li><i class="fa fa-check text-success"></i>  <strong> เสื้อที่ระลึก</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>อาหาร 2 มื้อ  </strong> </li>
+						          <li><i class="fa fa-check text-success"></i>  <strong> Goodie Bag</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>ชิปจับเวลา</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong> เหรียญ</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>เสื้อ Finisher</strong> </li>
+						          <li><i class="fa fa-times text-danger"></i> <strong>รัดน่อง</strong> </li>
+						        </ul>
+							</div>
+		                </div>
+		                <!--<div class="panel-footer text-align-center">
+		                    <a href="javascript:void(0);" class="btn btn-primary btn-block" role="button">Download <span> now!</span></a>
+		                	<div>
+		                		Or <a href="javascript:void(0);">Sign up</a>
+		                	</div>
+		                </div>-->
+		            </div>
+		        </div>
+
+		        <div class="col-xs-12 col-sm-6 col-md-3">
+		            <div class="panel pricing-big">	
+		            <img src="img/star-icon.png" class="ribbon" alt="ribbon" width="50px" height="50px">	            	
+		                <div class="panel-heading bg-dark">
+		                    <h3 class="panel-title">
+		                        21 Km. (Set B)</h3>
+		                </div>
+		                <div class="panel-body no-padding text-align-center">
+		                    <div class="the-price">
+		                        <h1>
+		                            ฿1700</h1>
+		                    </div>
+							<div class="price-features">
+								<ul class="list-unstyled text-left">
+						          <li><i class="fa fa-check text-success"></i>  <strong> เสื้อที่ระลึก</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>อาหาร 2 มื้อ  </strong> </li>
+						          <li><i class="fa fa-check text-success"></i>  <strong> Goodie Bag</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>ชิปจับเวลา</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong> เหรียญ</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>เสื้อ Finisher</strong> </li>
+						          <li><i class="fa fa-star text-warning"></i> <strong>รัดน่อง Compressport </strong> </li>
+						        </ul>
+							</div>
+		                </div>
+		                <!--<div class="panel-footer text-align-center">
+		                    <a href="javascript:void(0);" class="btn btn-primary btn-block" role="button">Download <span> now!</span></a>
+		                	<div>
+		                		Or <a href="javascript:void(0);">Sign up</a>
+		                	</div>
+		                </div>-->
+		            </div>
+		        </div>
+		        
+		        <div class="col-xs-12 col-sm-6 col-md-3">
+		            <div class="panel pricing-big">
+		            	<!--<img src="img/ribbon.png" class="ribbon" alt="ribbon">-->
+		                <div class="panel-heading bg-red">
+		                    <h3 class="panel-title-white">
+		                        10 Km. (Set A)</h3>
+		                </div>
+		                <div class="panel-body no-padding text-align-center">
+		                    <div class="the-price">
+		                        <h1>
+		                            ฿600</h1>
+		                    </div>
+							<div class="price-features">
+								<ul class="list-unstyled text-left">
+						          <li><i class="fa fa-check text-success"></i>  <strong> เสื้อที่ระลึก</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>อาหาร 2 มื้อ  </strong> </li>
+						          <li><i class="fa fa-check text-success"></i>  <strong> Goodie Bag</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>ชิปจับเวลา</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong> เหรียญ</strong></li>
+						          <li><i class="fa fa-times text-danger"></i> <strong>เสื้อ Finisher</strong> </li>
+						          <li><i class="fa fa-times text-danger"></i> <strong>รัดน่อง</strong> </li>
+						        </ul>
+							</div>
+		                </div>
+		                <!--<div class="panel-footer text-align-center">
+		                    <a href="javascript:void(0);" class="btn btn-primary btn-block" role="button">Download <span> now!</span></a>
+		                	<div>
+		                		Or <a href="javascript:void(0);">Sign up</a>
+		                	</div>
+		                </div>-->
+		            </div>
+		        </div>
+
+		        <div class="col-xs-12 col-sm-6 col-md-3">
+		            <div class="panel pricing-big">	
+		            <img src="img/star-icon.png" class="ribbon" alt="ribbon" width="50px" height="50px">	            	
+		                <div class="panel-heading bg-dark">
+		                    <h3 class="panel-title">
+		                        10 Km. (Set B)</h3>
+		                </div>
+		                <div class="panel-body no-padding text-align-center">
+		                    <div class="the-price">
+		                        <h1>
+		                            ฿1400</h1>
+		                    </div>
+							<div class="price-features">
+								<ul class="list-unstyled text-left">
+						          <li><i class="fa fa-check text-success"></i>  <strong> เสื้อที่ระลึก</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>อาหาร 2 มื้อ  </strong> </li>
+						          <li><i class="fa fa-check text-success"></i>  <strong> Goodie Bag</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>ชิปจับเวลา</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong> เหรียญ</strong></li>
+						          <li><i class="fa fa-times text-danger"></i> <strong>เสื้อ Finisher</strong> </li>
+						          <li><i class="fa fa-star text-warning"></i> <strong>รัดน่อง Compressport </strong> </li>
+						        </ul>
+							</div>
+		                </div>
+		                <!--<div class="panel-footer text-align-center">
+		                    <a href="javascript:void(0);" class="btn btn-primary btn-block" role="button">Download <span> now!</span></a>
+		                	<div>
+		                		Or <a href="javascript:void(0);">Sign up</a>
+		                	</div>
+		                </div>-->
+		            </div>
+		        </div>
+		        
+		        <div class="col-xs-12 col-sm-6 col-md-3">
+		            <div class="panel pricing-big">
+		            	<!--<img src="img/ribbon.png" class="ribbon" alt="ribbon">-->
+		                <div class="panel-heading bg-red">
+		                    <h3 class="panel-title-white">
+		                        3 Km. (Set A)</h3>
+		                </div>
+		                <div class="panel-body no-padding text-align-center">
+		                    <div class="the-price">
+		                        <h1>
+		                            ฿400</h1>
+		                    </div>
+							<div class="price-features">
+								<ul class="list-unstyled text-left">
+						          <li><i class="fa fa-check text-success"></i>  <strong> เสื้อที่ระลึก</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>อาหาร 2 มื้อ  </strong> </li>
+						          <li><i class="fa fa-times text-danger"></i>  <strong> Goodie Bag</strong></li>
+						          <li><i class="fa fa-times text-danger"></i> <strong>ชิปจับเวลา</strong></li>
+						          <li><i class="fa fa-times text-danger"></i> <strong> เหรียญ</strong></li>
+						          <li><i class="fa fa-times text-danger"></i> <strong>เสื้อ Finisher</strong> </li>
+						          <li><i class="fa fa-times text-danger"></i> <strong>ถุงเท้า Compressport</strong> </li>
+						        </ul>
+							</div>
+		                </div>
+		                <!--<div class="panel-footer text-align-center">
+		                    <a href="javascript:void(0);" class="btn btn-primary btn-block" role="button">Download <span> now!</span></a>
+		                	<div>
+		                		Or <a href="javascript:void(0);">Sign up</a>
+		                	</div>
+		                </div>-->
+		            </div>
+		        </div>
+
+		        <div class="col-xs-12 col-sm-6 col-md-3">
+		            <div class="panel pricing-big">	
+		            <img src="img/star-icon.png" class="ribbon" alt="ribbon" width="50px" height="50px">	            	
+		                <div class="panel-heading bg-dark">
+		                    <h3 class="panel-title">
+		                        3 Km. (Set B)</h3>
+		                </div>
+		                <div class="panel-body no-padding text-align-center">
+		                    <div class="the-price">
+		                        <h1>
+		                            ฿800</h1>
+		                    </div>
+							<div class="price-features">
+								<ul class="list-unstyled text-left">
+						          <li><i class="fa fa-check text-success"></i>  <strong> เสื้อที่ระลึก</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>อาหาร 2 มื้อ  </strong> </li>
+						          <li><i class="fa fa-times text-danger"></i>  <strong> Goodie Bag</strong></li>
+						          <li><i class="fa fa-times text-danger"></i> <strong>ชิปจับเวลา</strong></li>
+						          <li><i class="fa fa-times text-danger"></i> <strong> เหรียญ</strong></li>
+						          <li><i class="fa fa-times text-danger"></i> <strong>เสื้อ Finisher</strong> </li>
+						          <li><i class="fa fa-star text-warning"></i> <strong>ถุงเท้า Compressport </strong> </li>
+						        </ul>
+							</div>
+		                </div>
+		                <!--<div class="panel-footer text-align-center">
+		                    <a href="javascript:void(0);" class="btn btn-primary btn-block" role="button">Download <span> now!</span></a>
+		                	<div>
+		                		Or <a href="javascript:void(0);">Sign up</a>
+		                	</div>
+		                </div>-->
+		            </div>
+		        </div>
+
+		        <div class="col-xs-12 col-sm-6 col-md-3">
+		            <div class="panel pricing-big">
+		            	<!--<img src="img/ribbon.png" class="ribbon" alt="ribbon">-->
+		                <div class="panel-heading bg-red">
+		                    <h3 class="panel-title-white">
+		                        2 Km. </h3>
+		                </div>
+		                <div class="panel-body no-padding text-align-center">
+		                    <div class="the-price">
+		                        <h1>
+		                            ฿100</h1>
+		                    </div>
+							<div class="price-features">
+								<ul class="list-unstyled text-left">
+						          <li><i class="fa fa-check text-success"></i>  <strong> เสื้อที่ระลึก</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>อาหาร 2 มื้อ  </strong> </li>
+						          <li><i class="fa fa-times text-danger"></i>  <strong> Goodie Bag</strong></li>
+						          <li><i class="fa fa-times text-danger"></i> <strong>ชิปจับเวลา</strong></li>
+						          <li><i class="fa fa-times text-danger"></i> <strong> เหรียญ</strong></li>
+						          <li><i class="fa fa-check text-success"></i> <strong>เสื้อ Finisher</strong> </li>
+						        </ul>
+							</div>
+		                </div>
+		                <!--<div class="panel-footer text-align-center">
+		                    <a href="javascript:void(0);" class="btn btn-primary btn-block" role="button">Download <span> now!</span></a>
+		                	<div>
+		                		Or <a href="javascript:void(0);">Sign up</a>
+		                	</div>
+		                </div>-->
+		            </div>
+		        </div>
+
+
+    		</div>
+
+
+			 <p align="left">
+									หมายเหตุ <br>
+									1.	สามารถสมัครร่วมแข่งขันได้ในราคาปกติ (Set A) หรือเลือกสมัครพร้อมรับ “รัดน่อง” (Claf Sleeves) หรือ “ถุงเท้า” (Racing Sock) ของ Compressport ในราคาตาม Set B<br>
+									2.	เสื้อที่ระลึกและถุง Goodie Bags สั่งผลิตโดยเฉพาะจาก Compressport Asia <br>
+									3.	สามารถระบุขนาดรัดน่องและถุงเท้า ตามที่ต้องการได้  หรือระบุสีที่ต้องการ (กรณีที่มีจำนวนเพียงพอ) <br>
+									4.	ขอสงวนสิทธิ์ ไม่คืนค่าสมัครไม่ว่ากรณีใดๆ  เช่น กรณีที่ต้องยกเลิกหรือเลื่อนการแข่งขันจากเหตุผลที่ไม่สามารถควบคุมได้โดยผู้จัด<br>
+									5.	รับสมัครจำนวนจำกัด โปรดลงทะเบียนล่วงหน้า<br>
+									6.	นักวิ่งจะต้องมีอายุไม่ต่ำกว่ากลุ่มอายุที่กำหนด (การคำนวณอายุ พ.ศ. 2016 ลบด้วย ปี ค.ศ. เกิด)<br>
+									7.	ไม่สามารถเปลี่ยนแปลงชื่อผู้สมัครโดยเด็ดขาด<br>
+
+								</p>
+			</div>
+		</section>
+		<!-- /Section: PRICING -->
+
+		<!-- Section: #TEAM -->
+		<section id="team" class="home-section text-center">
+			<div class="heading-about">
+				<div class="container">
+					<div class="row">
+						<div >
+
+							<div class="section-heading">
+								<h2 style="color:#EF3E36">สถานที่จัดงาน</h2>
+								<p>
+									สวนพฤกษศาสตร์วรรณคดีภาคกลาง เขาประทับช้าง ตั้งอยู่ที่ อำเภอจอมบึง จังหวัดราชบุรี ห่างจากกรุงเทพฯ ประมาณ 117 กม. <br>ใช้เวลาเดินทางประมาณ 1.40 ชั่วโมง<br>
+GPS 13.606744, 99.663097
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div id="googleMap" style="width:80%;height:500px;margin: 0px auto;"></div>
+				<!-- <div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-3">
+
+						<div class="team boxed-grey">
+							<div class="inner">
+								<h5>John Doe</h5>
+								<p class="subtitle">
+									CEO
+								</p>
+								<div class="avatar"><img src="img/team/1.jpg" alt="" class="img-responsive" />
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-3">
+
+						<div class="team boxed-grey">
+							<div class="inner">
+								<h5>Barley Kazurkth</h5>
+								<p class="subtitle">
+									Marketing Director
+								</p>
+								<div class="avatar"><img src="img/team/2.jpg" alt="" class="img-responsive" />
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-3">
+
+						<div class="team boxed-grey">
+							<div class="inner">
+								<h5>Sadi Orlaf</h5>
+								<p class="subtitle">
+									Marketing Executive
+								</p>
+								<div class="avatar"><img src="img/team/3.jpg" alt="" class="img-responsive" />
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-3">
+
+						<div class="team boxed-grey">
+							<div class="inner">
+								<h5>Tony Shark</h5>
+								<p class="subtitle">
+									Programmer
+								</p>
+								<div class="avatar"><img src="img/team/4.jpg" alt="" class="img-responsive" />
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div> -->
+			</div>
+		</section>
+			<section id="features" class="home-section text-center bg-gray">
+			<div class="section-heading" >
+								<h2>การเดินทาง</h2>
+								<p align="center">
+									เขาประทับช้าง อยู่บนทางหลวงหมายเลข 3087 ก่อนถึงตัวอำเภอจอมบึง ประมาณ 10 กม. ทางขวามือ  วิธีการเดินทาง สามารถมาได้ทางรถยนต์ส่วนตัว หรือ เดินทางโดยรถตู้โดยสารจากกรุงเทพ<br>
+									 มาจอมบึง การเดินทางโดยรถยนต์ส่วนตัว จากกรุงเทพฯ ผ่านจังหวัดนครปฐมด้วยทางหลวงหมายเลข 4 ข้ามแม่น้ำแม่กลองเลี้ยวขวาที่แยกเขางูเข้าทางหลวงหมายเลข 3087 และเลี้ยวตามทางของทางหลวง<br>
+									 จนถึงเขาประทับช้างทางขวามือ   หรือมาทางถนนพระรามที่ 2 ผ่านจังหวัดสมุทรสงครามด้วยทางหลวงหมายเลข 35 ผ่านอำเภอปากท่อ และเลี้ยวขวาเข้าทางหลวงหมายเลข 4 และเลี้ยวซ้าย
+									 <br>เข้าทางหลวงหมายเลข 3291 ที่แยกเจดีย์หัก เลี้ยวซ้ายเข้าทางหลวงหมายเลข 3087 จนถึงเขาประทับช้างทางขวามือ 
+  
+
+								</p>
+			</div>
+			<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12" style="float:center">
+
+						<div class="row gallery-item">
+							<div class="col-md-6" align="right">
+								<a href="img/works/trav01.png" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/trav01.png" class="img-responsive" alt="img" width="540px"> </a>
+							</div>
+							<div class="col-md-6">
+								<a href="img/works/trav02.png" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/trav02.png" class="img-responsive" alt="img" width="500px"> </a>
+							</div>		
+						</div>
+
+					</div>
+				</div>
+		</section>
+		<!-- /Section: TEAM -->
+
+		<section id="features" class="home-section text-center">
+			<div class="section-heading">
+								<h2>ประเภทการแข่งขัน</h2>
+							</div>
+			<div class="container">
+				<table class="table table-bordered" style="font-size:13pt;	background-color: #000;">
+								<thead>
+									<tr>
+										<th>ระยะทาง</th>
+										<th>กลุ่มอายุ</th>
+										<th>รางวัล</th>
+										<th>จำนวน</th>
+									</tr>
+								</thead>
+								<tbody align="left" style="background-color:#ffffff">
+									<tr>
+										<td>วิ่ง 32 กม. </td>
+										<td><strong>ชาย</strong> 18-29 / 30-39 / 40-49 และ 50 ปีขึ้นไป<br>
+<strong>หญิง</strong> 18-39 และ 40 ปีขึ้นไป 
+</td>
+										<td>ถ้วยรางวัลสำหรับผู้ชนะ อันดับ 1-5 ของแต่ละรุ่น</td>
+										<td>700 คน</td>
+									</tr>
+									<tr>
+										<td>วิ่ง 21 กม. </td>
+										<td><strong>ชาย</strong> 18-29 / 30-39 / 40-49 และ 50 ปีขึ้นไป<br>
+<strong>หญิง</strong> 18-39 และ 40 ปีขึ้นไป 
+</td>
+										<td>ถ้วยรางวัลสำหรับผู้ชนะ อันดับ 1-5 ของแต่ละรุ่น</td>
+										<td>800 คน</td>
+									</tr>
+									<tr>
+										<td>วิ่ง 10 กม. </td>
+										<td><strong>ชาย</strong> 13-15 / 16-29 / 30-39 / 40-49 / 50-59  และ 60 ปีขึ้นไป <br>
+<strong>หญิง</strong> 13-15 / 16-29 / 30-39 / 40-49 และ 50 ปีขึ้นไป 
+</td>
+										<td>ถ้วยรางวัลสำหรับผู้ชนะ อันดับ 1-5 ของแต่ละรุ่น</td>
+										<td>1,500 คน</td>
+									</tr>
+									<tr>
+										<td>เดิน/วิ่ง 3 กม. </td>
+										<td>ไม่แบ่งกลุ่มอายุ</td>
+										<td>ไม่มีการแข่งขัน</td>
+										<td>ไม่จำกัดจำนวน</td>
+									</tr>
+									<tr>
+										<td>วิ่ง 2 กม. </td>
+										<td><strong>ชาย</strong> 7-8 / 9-10  และ 11-12 ปี <br>
+<strong>หญิง</strong> 7-8 / 9-10  และ 11-12 ปี 
+</td>
+										<td>ถ้วยรางวัลสำหรับผู้ชนะ อันดับ 1-3 ของแต่ละรุ่น</td>
+										<td>ไม่จำกัดจำนวน</td>
+									</tr>
+								</tbody>
+							</table>
+			</div>
+		</section>
+
+
+		<!-- Section: #FEATURES -->
+		<section id="features" class="home-section text-center bg-gray">
+
+			<div class="heading-about marginbot-50">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+
+							<div class="section-heading">
+								<h2>การบริการทั่วไป</h2>
+								<!-- <p>
+									Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has
+								</p> -->
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 col-md-3">
+
+						<div class="service-box">
+							<div class="service-icon">
+								<i class="fa fa-flag-checkered fa-3x text-danger"></i>
+							</div>
+							<div class="service-desc">
+								<h4>การบริการที่เส้นชัย  </h4>
+								<p>
+									บริการน้ำดื่ม  เครื่องดื่มเกลือแร่  ผลไม้  และอาหาร  สำหรับนักกีฬาทุกท่าน
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-sm-3 col-md-3">
+
+						<div class="service-box">
+							<div class="service-icon">
+								<i class="fa fa-road fa-3x text-danger"></i>
+							</div>
+							<div class="service-desc">
+								<h4>สถานที่จอดรถ  </h4>
+								<p>
+									จัดที่จอดรถไว้บริการด้านหน้าสวนพฤกษ์ศาสตร์  และบริเวณใกล้เคียง 
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-sm-3 col-md-3">
+
+						<div class="service-box">
+							<div class="service-icon">
+								<i class="fa fa-home fa-3x text-danger"></i>
+							</div>
+							<div class="service-desc">
+								<h4>การบริการที่พัก  </h4>
+								<p>
+									มีจุดกางเต็นท์นอน  มีเจ้าหน้าที่ดูแลความปลอดภัย
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-sm-3 col-md-3">
+
+						<div class="service-box">
+							<div class="service-icon">
+								<i class="fa fa-medkit fa-3x text-danger"></i>
+							</div>
+							<div class="service-desc">
+								<h4>การพยาบาล </h4>
+								<p>
+									มีหน่วยฉุกเฉินที่เส้นชัย และเส้นทาง 
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Section: FEATURES -->
+
+		<!-- Section: #SCREENSHOT -->
+		<section id="screenshots" class="home-section text-center">
+			<div class="heading-works marginbot-50">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+
+							<div class="section-heading">
+								<h2>เขาประทับช้าง เทรล 2015</h2>
+								<!-- <p>
+									Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has
+								</p> -->
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12" >
+
+						<div class="row gallery-item">
+							<div class="col-md-3">
+								<a href="img/works/PTC04.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC04.jpg" class="img-responsive" alt="img"> </a>
+							</div>
+							<div class="col-md-3">
+								<a href="img/works/PTC02.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC02.jpg" class="img-responsive" alt="img"> </a>
+							</div>
+							<div class="col-md-3">
+								<a href="img/works/PTC03.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC03.jpg" class="img-responsive" alt="img"> </a>
+							</div>
+							<div class="col-md-3">
+								<a href="img/works/PTC01.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC01.jpg" class="img-responsive" alt="img"> </a>
+							</div>
+							<div class="col-md-3">
+								<a href="img/works/PTC05.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC05.jpg" class="img-responsive" alt="img"> </a>
+							</div>
+							<div class="col-md-3">
+								<a href="img/works/PTC06.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC06.jpg" class="img-responsive" alt="img"> </a>
+							</div>
+							<div class="col-md-3">
+								<a href="img/works/PTC07.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC07.jpg" class="img-responsive" alt="img"> </a>
+							</div>
+							<div class="col-md-3">
+								<a href="img/works/PTC10.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC10.jpg" class="img-responsive" alt="img"> </a>
+							</div>
+							<div class="col-md-3">
+								<a href="img/works/PTC11.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC11.jpg" class="img-responsive" alt="img"> </a>
+							</div>
+							<div class="col-md-3">
+								<a href="img/works/PTC08.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC08.jpg" class="img-responsive" alt="img"> </a>
+							</div>
+							<div class="col-md-3">
+								<a href="img/works/PTC09.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC09.jpg" class="img-responsive" alt="img"> </a>
+							</div>
+							
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Section: SCREENSHOT -->
+
+		<!-- Section: #UPDATES -->
+		<section id="updates" class="home-section text-center bg-gray">
+			<div class="heading-contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+
+							<div class="section-heading">
+								<h2>กำหนดการ</h2>
+								<!-- <p>
+									Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has
+								</p> -->
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<table width="100%" border="0" cellpadding="10">
+								<thead>
+									<tr>
+										<th colspan="2" style="text-align:center"><h3><u>เสาร์ที่  18  มิถุนายน 2559</u><h3></th>
+									</tr>
+								</thead>
+								<tbody align="left">
+									<tr>
+										<td align="right" width="45%" valign="top"><h3>12.00 – 17.00</h3></td>
+										<td><h3>- รับหมายเลขการแข่งขัน  เสื้อที่ระลึก และถุงอุปกรณ์<br>
+										- เวทีเสวนาการวิ่งเทรล<br>
+										- การแสดงและจำหน่ายผลิตภัณฑ์ และออกร้านขายสินค้า</h3></td>
+										
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>16.00</h3></td>
+										<td><h3>- แข่งขันวิ่ง 2 กิโลเมตรเด็ก</h3></td>
+										
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>17.00</h3></td>
+										<td><h3>- พิธีมอบรางวัลผู้ชนะ 2 กิโลเมตรเด็ก</h3></td>
+										
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>17.00 – 18.00</h3></td>
+										<td><h3>- อาหารเย็น และสังสรรค์</h3></td>
+										
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>18.00 – 20.00</h3></td>
+										<td><h3>- กิจกรรมดูหนัง นั่งคุย </h3></td>
+										
+									</tr>
+								</tbody>
+							</table>
+							<table width="100%" border="0" cellpadding="10">
+								<thead>
+									<tr>
+										<th colspan="2" style="text-align:center"><h3><u>อาทิตย์ที่ 19 มิถุนายน 2559</u><h3></th>
+									</tr>
+								</thead>
+								<tbody align="left">
+									<tr>
+										<td align="right" width="45%"><h3>04.00</h3></td>
+										<td><h3>- โหมโรง  : ดนตรีไทยในสวนวรรณคดี</h3></td>
+										
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>04.30 – 05.30</h3></td>
+										<td><h3>- ลงทะเบียนนักวิ่งที่เดินทางมาเช้าวันแข่งขัน</h3></td>
+										
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>05.40</h3></td>
+										<td><h3>- เช็คอินและประชุมชี้แจงนักวิ่ง	ระยะทาง  32 กม.</h3></td>
+										
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>06.00</h3></td>
+										<td><h3>- เริ่มต้นการแข่งขัน 		ระยะทาง  32 กม.</h3></td>
+										
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>06.05</h3></td>
+										<td><h3>- เช็คอินและประชุมชี้แจงนักวิ่ง	ระยะทาง  21 กม. </h3></td>
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>06.10</h3></td>
+										<td><h3>- เริ่มต้นการแข่งขัน 		ระยะทาง  21 กม.</h3></td>
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>06.15</h3></td>
+										<td><h3>- เช็คอินและประชุมชี้แจงนักวิ่ง	ระยะทาง 10 กม.</h3></td>
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>06.20</h3></td>
+										<td><h3>- เริ่มต้นการแข่งขัน	  	ระยะทาง  10 กม. </h3></td>
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>06.35</h3></td>
+										<td><h3>- เช็คอินและประชุมชี้แจงเดิน/วิ่ง  ระยะทาง  3 กม. </h3></td>
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>06.40</h3></td>
+										<td><h3>- เช็คอินและประชุมชี้แจงนักวิ่ง	ระยะทาง  21 กม. </h3></td>
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>08.00</h3></td>
+										<td><h3>- ปลูกต้นไม้ในสวน </h3></td>
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>08.30</h3></td>
+										<td><h3>- พิธีมอบรางวัลผู้ชนะ  10 กม. </h3></td>
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>09.30</h3></td>
+										<td><h3>- พิธีมอบรางวัลผู้ชนะ  21 กม.</h3></td>
+									</tr>
+									<tr>
+										<td align="right" width="45%"><h3>09.45</h3></td>
+										<td><h3>- พิธีมอบรางวัลผู้ชนะ  32 กม. </h3></td>
+									</tr>
+								</tbody>
+							</table>
+				<!-- <div class="row">
+					<div class="timeline-centered">
+			    
+				<article class="timeline-entry">
+					
+					<div class="timeline-entry-inner">
+						<time class="timeline-time" datetime="2014-01-10T03:45"><span> 12.00–17.00</span> <span>18  มิถุนายน 2559</span></time>
+						
+						<div class="timeline-icon bg-success">
+							<i class="entypo-feather"></i>
+						</div>
+						
+						<div class="timeline-label">
+							<h2>รับหมายเลขการแข่งขัน  เสื้อที่ระลึก และถุงอุปกรณ์</h2>
+					
+						</div>
+					</div>
+					
+				</article>
+				
+				
+				<article class="timeline-entry left-aligned">
+					
+					<div class="timeline-entry-inner">
+						<time class="timeline-time" datetime="2014-01-10T03:45"><span>03:45 AM</span> <span>4 weeks ago</span></time>
+						
+						<div class="timeline-icon bg-secondary">
+							<i class="entypo-suitcase"></i>
+						</div>
+						
+						<div class="timeline-label">
+							<h2><a href="#">SmartAdmin goes public!</a></h2>
+							<p>Yahoo buys a share in <strong>SmartAdmin</strong></p>
+						</div>
+					</div>
+					
+				</article>
+				
+				
+				<article class="timeline-entry">
+					
+					<div class="timeline-entry-inner">
+						<time class="timeline-time" datetime="2014-01-09T13:22"><span>03:45 AM</span> <span>3 months ago</span></time>
+						
+						<div class="timeline-icon bg-info">
+							<i class="entypo-location"></i>
+						</div>
+						
+						<div class="timeline-label">
+							<h2><a href="#">SmartAdmin Convention</a> <span>checked in at</span> <a href="#">Laborator</a></h2>
+							
+							<blockquote>Place was booked till 3am!</blockquote>
+							
+							<img src="img/map.png" alt="map" class="img-responsive">
+
+
+						</div>
+					</div>
+					
+				</article>
+				
+				
+				<article class="timeline-entry left-aligned">
+					
+					<div class="timeline-entry-inner">
+						<time class="timeline-time" datetime="2014-01-10T03:45"><span>03:45 AM</span> <span>8 months ago</span></time>
+						
+						<div class="timeline-icon bg-warning">
+							<i class="entypo-camera"></i>
+						</div>
+						
+						<div class="timeline-label">
+							<h2><a href="#">We have lift off!</a></h2>
+							
+							<blockquote>SmartAdmin Launched with grace and beauty</blockquote>
+
+						</div>
+					</div>
+					
+				</article>
+				
+				
+				<article class="timeline-entry begin">
+				
+					<div class="timeline-entry-inner">
+						
+						<div class="timeline-icon" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
+							<i class="entypo-flight"></i>
+						</div>
+						
+					</div>
+					
+				</article>
+				
+			</div>
+				</div> -->
+			</div>
+		</section>
+		<!-- /Section: UPDATES -->
+
+		<!-- Section: #QUOTES -->
+		<section id="quotes" class="home-section text-center ">
+			
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+			                <div class="quote"><i class="fa fa-quote-left fa-4x text-danger"></i></div>
+							<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+							  <!-- Carousel indicators -->
+			                  <ol class="carousel-indicators">
+							    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+							    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+							    <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+							    <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+							    <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
+							    <li data-target="#fade-quote-carousel" data-slide-to="5"></li>
+							  </ol>
+							  <!-- Carousel items -->
+							  <div class="carousel-inner" align="center">
+							    <div class="active item">
+							    	<img src="img/works/comm01.png" class="img-responsive" alt="img">
+							    </div>
+							    <div class="item">
+							    	<img src="img/works/comm02.png" class="img-responsive" alt="img">
+							    </div>
+							    <div class="item">
+							    	<img src="img/works/comm03.png" class="img-responsive" alt="img">
+							    </div>
+							    <div class="item">
+							    	<img src="img/works/comm04.png" class="img-responsive" alt="img">
+							    </div>
+							    <div class="item">
+							    	<img src="img/works/comm05.png" class="img-responsive" alt="img">
+							    </div>
+							    <div class="item">
+							    	<img src="img/works/comm06.png" class="img-responsive" alt="img">
+							    </div>
+							  </div>
+							</div>
+						</div>							
+					</div>
+				</div>
+			
+		</section>
+		<!-- /Section: QUOTES -->
+
+		<!-- Section: #CONTACT -->
+		<!-- <section id="contact" class="home-section text-center">
+			<div class="heading-contact marginbot-50">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+
+							<div class="section-heading">
+								<h2>Get in touch</h2>
+								<p>
+									Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+
+				<div class="row">
+					<div class="col-lg-8 col-md-offset-2">
+						<div class="boxed-grey">
+							<form id="contact-form">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="name"> Name</label>
+											<input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+										</div>
+										<div class="form-group">
+											<label for="email"> Email Address</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span> </span>
+												<input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="subject"> Subject</label>
+											<select id="subject" name="subject" class="form-control" required="required">
+												<option value="">Choose One:</option>
+												<option value="service">General Customer Service</option>
+												<option value="suggestions">Suggestions</option>
+												<option value="product">Product Support</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="name"> Message</label>
+											<textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
+											Send Message
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+
+						<div class="widget-contact row">
+							<div class="col-lg-6">
+								<address>
+									<strong>SMARTADMIN Ltd.</strong>
+									<br>
+									Big Villa 334 Awesome, Beautiful Suite 1200
+									<br>
+									San Francisco, CA 94107
+									<br>
+									<abbr title="Phone">P:</abbr> (123) 456-7890
+								</address>
+							</div>
+
+							<div class="col-lg-6">
+								<address>
+									<strong>Email</strong>
+									<br>
+									<a href="mailto:#">email.name@example.com</a>
+									<br />
+									<a href="mailto:#">name.name@example.com</a>
+								</address>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section> -->
+		<!-- /Section: CONTACT -->
+
+		<!-- #BOTTOM CONTENT -->
+		
+		<!-- /#BOTTOM CONTENT -->
+
+		<!-- #FOOTER -->
+		<!-- <footer>
+
+			<div class="footer-content clearfix">
+				<div class="container custom-container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<a href="#" class="footer-logo">About Us</a>
+							<p>
+								Fusce gravida tortor felis, ac dictum risus sagittis id.
+							</p>
+							<p>
+								Donec volutpat, mi vel egestas eleifend, dolor arcu iaculis nunc. Fusce gravida tortor felis, ac dictum risus sagittis id. Morbi posuere justo eleifend libero ultricies ultrices.
+							</p>
+							<a href="#" class="learn-more">learn more</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<h3>Recent Tweets</h3>
+							<div class="recent-post clearfix">
+								<div class="footer-thumb-img">
+									<span class="footer-overlay-img"></span>
+								</div>
+								<p>
+									Fusce gravida tortor felis, ac dictum risus sagittis
+									<span class="date">November 15, 2014</span>
+								</p>
+
+							</div>
+							<div class="recent-post clearfix">
+								<div class="footer-thumb-img">
+									<span class="footer-overlay-img"></span>
+								</div>
+								<p>
+									Fusce gravida tortor felis, ac dictum risus sagittis
+									<span class="date">November 11, 2014</span>
+								</p>
+
+							</div>
+							<div class="recent-post clearfix">
+								<div class="footer-thumb-img">
+									<span class="footer-overlay-img"></span>
+								</div>
+								<p>
+									Fusce gravida tortor felis, ac dictum risus sagittis
+									<span class="date">November 10, 2014</span>
+								</p>
+
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<h3>Top Tags</h3>
+							<div class="footer-tags">
+								<ul>
+									<li>
+										<a href="#">Web Design</a>
+									</li>
+									<li>
+										<a href="#">Services</a>
+									</li>
+									<li>
+										<a href="#">Landing</a>
+									</li>
+									<li>
+										<a href="#">SmartAdmin</a>
+									</li>
+									<li>
+										<a href="#">.Net</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<h3>Flicker photos (recent)</h3>
+							<div class="flicker-widget">
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<div class="bottom-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+							<p>
+								Copyright © 2015 - Khao Prathapchang Trail
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- / #FOOTER -->
+
+		<!-- # Core JavaScript Files -->
+
+		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="js/libs/jquery-2.0.2.min.js"><\/script>');
+			}
+		</script>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script>
+			if (!window.jQuery.ui) {
+				document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+			}
+		</script>
+
+
+		<!-- BOOTSTRAP JS -->
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+
+		<!--# JS PLUGINS -->
+		<script src="js/plugins/classie.js"></script>
+		<script src="js/plugins/gnmenu.js"></script>
+		<script src="js/plugins/jquery.scrollUp.js"></script>
+		<script src="js/plugins/nivo-lightbox.min.js"></script>
+		<script src="js/plugins/smoothscroll.js"></script>
+		<script src="js/plugins/jquery.themepunch.plugins.min.js"></script>
+		<script src="js/plugins/jquery.themepunch.revolution.min.js"></script>
+
+		<!-- # Custom Theme JavaScript -->
+		<script src="js/custom.js"></script>
+
+		<!-- #PAGE SCRIPT -->
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+
+				jQuery('.tp-banner').show().revolution({
+					dottedOverlay : "none",
+					delay : 8000,
+					startwidth : 1170,
+					startheight : 700,
+					hideThumbs : 200,
+
+					thumbWidth : 100,
+					thumbHeight : 50,
+					thumbAmount : 5,
+
+					navigationType : "bullet",
+					navigationArrows : "solo",
+					navigationStyle : "preview4",
+
+					touchenabled : "on",
+					onHoverStop : "off",
+
+					swipe_velocity : 0.7,
+					swipe_min_touches : 1,
+					swipe_max_touches : 1,
+					drag_block_vertical : false,
+
+					parallax : "mouse",
+					parallaxBgFreeze : "on",
+					parallaxLevels : [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
+
+					keyboardNavigation : "off",
+
+					navigationHAlign : "center",
+					navigationVAlign : "bottom",
+					navigationHOffset : 0,
+					navigationVOffset : 20,
+
+					soloArrowLeftHalign : "left",
+					soloArrowLeftValign : "center",
+					soloArrowLeftHOffset : 20,
+					soloArrowLeftVOffset : 0,
+
+					soloArrowRightHalign : "right",
+					soloArrowRightValign : "center",
+					soloArrowRightHOffset : 20,
+					soloArrowRightVOffset : 0,
+
+					shadow : 0,
+					fullWidth : "off",
+					fullScreen : "on",
+
+					spinner : "spinner4",
+
+					stopLoop : "off",
+					stopAfterLoops : -1,
+					stopAtSlide : -1,
+
+					shuffle : "off",
+
+					autoHeight : "off",
+					forceFullWidth : "off",
+
+					hideThumbsOnMobile : "off",
+					hideNavDelayOnMobile : 1500,
+					hideBulletsOnMobile : "off",
+					hideArrowsOnMobile : "off",
+					hideThumbsUnderResolution : 0,
+
+					hideSliderAtLimit : 0,
+					hideCaptionAtLimit : 0,
+					hideAllCaptionAtLilmit : 0,
+					startWithSlide : 0,
+					fullScreenOffsetContainer : ""
+				});
+
+			});
+			//ready
+
+			$.scrollUp();
+		</script>
+
+	</body>
+
+</html>
