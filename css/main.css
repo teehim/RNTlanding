@@ -5,7 +5,7 @@
 @font-face{
 font-family: maxPin;
     src: url('../fonts/MAX PINJOHN V2.ttf');
-} 
+}
 
 
 body {
@@ -105,12 +105,10 @@ hr {
 
 }
 
-.text-left-center{
-	width: 80%;
-	margin: 0 auto;
-}
 
 .text-left-center p {
+  width: 80%;
+  margin: 0 auto;
 	text-align: left;
 }
 /* --- section bg var --- */
@@ -517,7 +515,7 @@ input.gn-search:focus {
 	font-size: 40px;
 }
 
-.intro-text 
+.intro-text
 	font-size: 18px;
 }
 
@@ -1103,7 +1101,7 @@ transform: scale(1);
 
 /*
 
-PRICING TABLES 
+PRICING TABLES
 
 */
 
@@ -1132,7 +1130,7 @@ PRICING TABLES
 }
 
 
-/* 
+/*
  * RIBBON
  */
 
@@ -1303,7 +1301,11 @@ section {
 
 
 
-
+.img-softedge{
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
 .img-rounded
 {
 	border-radius: 3px;
