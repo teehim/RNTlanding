@@ -19,6 +19,8 @@
 		<link rel="stylesheet" href="css/owl.carousel.css">
 		<link rel="stylesheet" href="css/owl.theme.css">
 		<link rel="stylesheet" href="css/popup.css">
+		<link rel="stylesheet" href="css/buttons.css">
+
 
 		<!-- #RELATED CSS -->
 		<link type="text/css" href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -36,6 +38,7 @@
 
 		<!-- #GOOGLE FONT -->
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
 
 		<script src="http://maps.google.com/maps/api/js"></script>
 		<script>
@@ -58,6 +61,11 @@ function initialize() {
   marker.setMap(map);
 }
 google.maps.event.addDomListener(window, 'load', initialize);
+
+function showhide(id){
+	var e = document.getElementById(id);
+	e.style.display = (e.style.display == 'block')?'none':'block';
+}
 </script>
 <style>
 th{
@@ -70,14 +78,14 @@ td {
 		vertical-align: text-top;
 }
 h3{
-	font-size: 27px;
+	font-size: 30px;
 }
 h4{
 	color:#EF3E36;
 	font-size: 40px;
 }
 p{
-	font-size: 27px;
+	font-size: 30px;
 }
 #owl-demo .item{
   margin: 3px;
@@ -236,17 +244,22 @@ p{
 		<section id="pricing" class="home-section text-center">
 				<div class="row gallery-item text-left-center" >
 					<div class="col-md-12 text" align="center">
-					<img src="img/regis/ticket_info.jpg" class="img-responsive" alt="img" width="50%">
+						<div style="width:30%">
+							<a href="#" class=" button button-pill button-primary button-large">REGISTER</a>
+						</div>
+					<img src="img/regis/ticket_info.jpg" class="img-responsive" alt="img" width="50%" style="margin-top:50px">
 					</div>
 									<p style="width:80%">
  										หมายเหตุ <br>
  										1.	สามารถสมัครร่วมแข่งขันได้ในราคาปกติ (Set A) หรือเลือกสมัครพร้อมรับ “รัดน่อง” (Claf Sleeves) หรือ “ถุงเท้า” (Racing Sock) ของ Compressport ในราคาตาม Set B<br>
  										2.	เสื้อที่ระลึกและถุง Goodie Bags สั่งผลิตโดยเฉพาะจาก Compressport Asia <br>
- 										3.	สามารถระบุขนาดรัดน่องและถุงเท้า ตามที่ต้องการได้  หรือระบุสีที่ต้องการ (กรณีที่มีจำนวนเพียงพอ) <br>
- 										4.	ขอสงวนสิทธิ์ ไม่คืนค่าสมัครไม่ว่ากรณีใดๆ  เช่น กรณีที่ต้องยกเลิกหรือเลื่อนการแข่งขันจากเหตุผลที่ไม่สามารถควบคุมได้โดยผู้จัด<br>
- 										5.	รับสมัครจำนวนจำกัด โปรดลงทะเบียนล่วงหน้า<br>
+ 										3.	สามารถระบุขนาดรัดน่องและถุงเท้า ตามที่ต้องการได้<br>
+										4.  สินค้าตาม Set B (รัดน่องและถุงเท้า) เป็นสินค้านำเข้าจากต่างประเทศผู้สมัครสามารถระบุสีที่ต้องการได้ อย่างไรก็ตาม ผู้จัดขอสงวนสิทธิ์หากสีที่เลือกไว้ไม่เพียงพอจะเปลี่ยนเป็นสีดำให้ และหากสีดำไม่พอจะเลือกสีอื่นๆ ให้ตามที่มี<br>
+ 										5.	การวิ่งแข่งขัน 2 กม.สำหรับเด็ก จัดขึ้นในวันเสาร์ที่ 18 มิถุนายนสำหรับเด็กที่สามารถวิ่งแข่งขันได้ด้วยตนเองเท่านั้น  ซึ่งจะได้รับเสื้อที่ระลึกและเหรียญสำหรับแตกต่างจากการวิ่งประเภทอื่นๆ<br>
  										6.	นักวิ่งจะต้องมีอายุไม่ต่ำกว่ากลุ่มอายุที่กำหนด (การคำนวณอายุ พ.ศ. 2016 ลบด้วย ปี ค.ศ. เกิด)<br>
  										7.	ไม่สามารถเปลี่ยนแปลงชื่อผู้สมัครโดยเด็ดขาด<br>
+										8.  ขอสงวนสิทธิ์ปรับเปลี่ยนกลุ่มอายุได้ตามความเหมาะสมของจำนวนผู้เข้าแข่งขัน<br>
+										9.  ขอสงวนสิทธิ์ไม่คืนค่าสมัครไม่ว่ากรณีใดๆ  เช่น กรณีที่ต้องยกเลิกหรือเลื่อนการแข่งขันจากเหตุผลที่ไม่สามารถควบคุมได้โดยผู้จัด
 
  									</p>
 
@@ -261,6 +274,33 @@ p{
 				<div class="col-md-12 text" align="center">
 					 <img src="img/regis/apply.png" class="img-responsive" alt="img" width="60%">
 				</div>
+			</div>
+			<a class="button button-pill button-caution" href="javascript:showhide('apply')">ดูข้อมูลเพิ่มเติม</a>
+			<div class="section-heading text-left-center" id="apply" hidden="true">
+				<p style="width:80%;margin-top:20px;" id="info">
+					<strong>สมัครเข้าร่วมการแข่งขันเขาประทับช้าง คอมเพรสสปอร์ต เทรล 2016 ได้ทางเว็บไซต์ <a href="http://www.kptctrail.com"><u>http://www.kptctrail.com</u></a></strong> <br>
+
+<strong>ขั้นตอนที่ 1  สมัครสมาชิก Rungister (Rungister เป็นระบบรับสมัครที่ใช้)</strong> <br>
+
+สมัครล่วงหน้าได้ตั้งแต่ <strong>วันที่ 25 กุมภาพันธ์ 2559 เวลา 8.00 น.</strong> เพื่อความสะดวกในการสมัครแข่งขัน <br>
+
+- <strong>กรณีที่ 1</strong> สมัครสมาชิก Rungister สำหรับตนเอง <br>
+
+- <strong>กรณีที่ 2</strong> สมัครสมาชิก Rungister สำหรับผู้อื่น <br>
+
+* ผู้สมัครที่เคยสมัครแข่งขันงานตะนาวศรีเทรล 2015  งานวิ่งสู่ชีวิตใหม่ 2558 (Thai Healthday Run) และงานจอมบึงมาราธอน 2016 สามารถใช้เลขที่บัตรประชาขนล็อคอินเข้าสู่ระบบได้เพื่อตรวจสอบความพร้อมของสถานะสมาชิก <br>
+
+* กรณีที่ไม่มีข้อมูลตามกรณีที่ 1 สามารถลงทะเบียนสมาชิกและให้ข้อมูลเพิ่มเติมได้<br>
+
+* หากไม่ประสงค์จะสมัครสมาชิกเอง สามารถให้สมาชิกอื่นลงทะเบียนข้อมูลไว้ได้ (มี Runner Record แต่ไม่ถือเป็นสมาชิก Rungister)  โดยการกรอกข้อมูล (Key-in) หรืออัพโหลดข้อมูลในรูปแบบ Excel File <br>
+
+<strong>ขั้นตอนที่ 2 สมัครเข้าร่วมการแข่งขัน</strong><br>
+
+สมัครเข้าร่วมเขาประทับช้าง คอมเพรสสปอร์ต เทรล 2016 ได้ตั้งแต่ <strong>วันที่ 1 มีนาคม 2559 เวลา 20.00 น.</strong> หรือจนกว่าจะถึงจำนวนที่กำหนด  (สมัครโดยผู้ที่เป็นสมาชิก Rungister สมัครเองหรือสมัครให้ผู้อื่นไม่เกินครั้งละ 20 ราย)<br><br>
+
+<strong><u>สิทธิพิเศษสำหรับผู้ที่ไม่เคยวิ่งเทรลสนามใดมาก่อน 500 ราย</u></strong><br>
+คณะทำงานฯ จะจับฉลากรายชื่อสมาชิก Rungister (ที่ลงทะเบียนก่อนเวลา 18.00 น. ของวันที่ 28 กุมภาพันธ์ 2559) เพื่อได้สิทธิในการสมัครเขาประทับช้าง คอมเพรสสปอร์ต เทรล 2016 ก่อนใคร (มีเวลาลงทะเบียนการแข่งขันถึงวันที่ 3 มีนาคม 2559)
+				</p>
 			</div>
 		</section>
 		<!-- Section: #TEAM -->
@@ -338,7 +378,10 @@ GPS 13.606744, 99.663097
 										<td>วิ่ง 32 กม. </td>
 										<td>18-29 <br> 30-39 <br> 40-49 <br> 50 ปีขึ้นไป</td>
 										<td>18-39 <br> 40 ปีขึ้นไป</td>
-										<td>ถ้วยรางวัลสำหรับผู้ชนะ อันดับ 1-5 ของแต่ละรุ่น</td>
+										<td>ถ้วยรางวัลสำหรับผู้ชนะ อันดับ 1-5 ของแต่ละรุ่น<br>
+												นอกจากนี้ ผู้ชนะอันดับ 1 ชายและหญิง (Overall) <br>
+												ได้สิทธิ์ร่วมการแข่งขัน Compressport 100
+												Malaysia Series*</td>
 										<td>700 คน</td>
 									</tr>
 									<tr>
@@ -583,7 +626,7 @@ GPS 13.606744, 99.663097
 									</tr>
 									<tr>
 										<td align="right" width="45%"><h3>04.30 – 05.30</h3></td>
-										<td><h3>- ลงทะเบียนนักวิ่งที่เดินทางมาเช้าวันแข่งขัน</h3></td>
+										<td><h3>- รับหมายเลขการแข่งขัน  เสื้อที่ระลึก และถุงอุปกรณ์สำหรับนักวิ่งที่เดินทางมาเช้าวันแข่งขัน</h3></td>
 
 									</tr>
 									<tr>
@@ -613,11 +656,11 @@ GPS 13.606744, 99.663097
 										<td><h3>- เริ่มต้นการแข่งขัน	  	ระยะทาง  10 กม. </h3></td>
 									</tr>
 									<tr>
-										<td align="right" width="45%"><h3>06.35</h3></td>
+										<td align="right" width="45%"><h3>06.25</h3></td>
 										<td><h3>- เช็คอินและประชุมชี้แจงเดิน/วิ่ง  ระยะทาง  3 กม. </h3></td>
 									</tr>
 									<tr>
-										<td align="right" width="45%"><h3>06.40</h3></td>
+										<td align="right" width="45%"><h3>06.30</h3></td>
 										<td><h3>- เช็คอินและประชุมชี้แจงนักวิ่ง	ระยะทาง  21 กม. </h3></td>
 									</tr>
 									<tr>
@@ -725,6 +768,8 @@ GPS 13.606744, 99.663097
 		<script src="js/plugins/jquery.themepunch.plugins.min.js"></script>
 		<script src="js/plugins/jquery.themepunch.revolution.min.js"></script>
 		<script src="js/jquery.popup.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  	<script type="text/javascript" src="js/buttons.js"></script>
 
 		<!-- # Custom Theme JavaScript -->
 		<script src="js/custom.js"></script>
@@ -745,6 +790,12 @@ GPS 13.606744, 99.663097
 		});
 		$(function(){
 			$('a.popup').popup();
+
+			// $('a.show_info').click(function(event){
+			// 	event.preventDefault();
+			// 	$(this).parents('#apply').find('#info').show();
+			// });
+
 		});
 		</script>
 
