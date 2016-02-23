@@ -7,7 +7,8 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 
-		<title>SmartAdmin Landing</title>
+		<title>Kao Pratab Chang Trail 2016</title>
+		<link rel="icon" href="img/banner/logo.png" sizes="32x32" type="image/png">
 
 		<!-- #Bootstrap Core CSS -->
 		<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
@@ -15,6 +16,9 @@
 		<!-- #SLIDER REVOLUTION 4.x CSS SETTINGS -->
 		<link rel="stylesheet" type="text/css" href="css/extralayers.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.theme.css">
+		<link rel="stylesheet" href="css/popup.css">
 
 		<!-- #RELATED CSS -->
 		<link type="text/css" href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -58,19 +62,50 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <style>
 th{
 	color:#EF3E36;
+	text-align: center;
+	vertical-align: text-top;
 }
 td {
     padding: 10px;
+		vertical-align: text-top;
 }
 h3{
-	font-size: 25pt;
+	font-size: 27px;
 }
 h4{
 	color:#EF3E36;
-	font-size: 30pt;
+	font-size: 40px;
 }
 p{
-	font-size: 20pt;
+	font-size: 27px;
+}
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+/*@media (min-width: 480px) {
+    .img-responsive {
+        width: 80%;
+    }
+}*/
+.carousel-inner{
+	margin-top: 20px;
+}
+@media only screen and (max-width: 768px) {
+    .img-responsive {
+        width: 80%;
+    }
+		.img-softedge{
+			width: 100%;
+			padding: 0 20px 0 20px;
+		}
+		.carousel-inner{
+			margin-top: 0px;
+		}
 }
 </style>
 
@@ -105,11 +140,11 @@ p{
 
 	<body data-spy="scroll">
 
-		<div class="container">
+		<div class="container hidden-xs">
 
 			<!-- Section: #MENU -->
 			<ul id="gn-menu" class="gn-menu-main" >
-				<li class="gn-trigger">
+				<!-- <li class="gn-trigger">
 					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
 					<nav class="gn-menu-wrapper">
 						<div class="gn-scroller">
@@ -138,11 +173,9 @@ p{
 								</li>
 							</ul>
 						</div><!-- /gn-scroller -->
-					</nav>
+					<!-- </nav> -->
 				</li>
-				<li class="hidden-xs">
-					<a href="index.html"><img src="img/banner/banner05.png" alt="logo" style="width: 135px; margin-top: -4px;" /></a>
-				</li>
+					<img src="img/banner/logo.png" alt="logo" style="width: 100px; margin-top: 10px;" />
 				<li>
 					<!-- <ul class="company-social">
 						<li class="social-facebook">
@@ -164,33 +197,32 @@ p{
 
 		</div>
 
-		<section class="intro">
 
 				<!--
 				#################################
 				- THEMEPUNCH BANNER -
 				#################################
 				-->
-				<div id="myCarousel" class="carousel fade">
+				<div id="myCarousel" class="carousel fade" data-ride="carousel">
 							<ol class="carousel-indicators">
-								<!-- <li data-target="#myCarousel" data-slide-to="0" class="active"></li> -->
-<!-- 								<li data-target="#myCarousel" data-slide-to="1" class=""></li>
-								<li data-target="#myCarousel" data-slide-to="2" class=""></li> -->
+							 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							 <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+						<!--		<li data-target="#myCarousel" data-slide-to="2" class=""></li> -->
 							</ol>
-							<div class="carousel-inner" align="center" style="background:#000000; margin-top:20px">
+							<div class="carousel-inner" align="center" style="background:#000000;">
 								<div class="item active">
 									<img src="img/banner/obanner01.jpg" alt="" width="100%">
 	<!-- 								<div class="carousel-caption caption-right">
 										<a href="javascript:void(0);" class="btn btn-info btn-sm">Read more</a>
 									</div> -->
 								</div>
-<!-- 								<div class="item">
-									<img src="img/banner/banner02.jpg" alt=""  width="80%">
-									<div class="carousel-caption caption-left">
+						<div class="item">
+									<img src="img/banner/obanner02.jpg" alt=""  width="100%">
+									<!-- <div class="carousel-caption caption-left">
 										<a href="javascript:void(0);" class="btn btn-danger btn-sm">Read more</a>
-									</div>
+									</div> -->
 								</div>
-
+<!--
 								<div class="item">
 									<img src="img/banner/banner03.jpg" alt=""  width="80%">
 									<div class="carousel-caption">
@@ -198,16 +230,15 @@ p{
 								</div> -->
 							</div>
 				</div>
-			</section>
 
 
 		<!-- Section: #PRICING -->
-		<section id="pricing" class="home-section text-center bg-gray">
+		<section id="pricing" class="home-section text-center">
 				<div class="row gallery-item text-left-center" >
 					<div class="col-md-12 text" align="center">
-						<a href="img/regis/ticket_info.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/regis/ticket_info.jpg" class="img-responsive" alt="img" width="50%"> </a>
+					<img src="img/regis/ticket_info.jpg" class="img-responsive" alt="img" width="50%">
 					</div>
-									<p style="width:65%">
+									<p style="width:80%">
  										หมายเหตุ <br>
  										1.	สามารถสมัครร่วมแข่งขันได้ในราคาปกติ (Set A) หรือเลือกสมัครพร้อมรับ “รัดน่อง” (Claf Sleeves) หรือ “ถุงเท้า” (Racing Sock) ของ Compressport ในราคาตาม Set B<br>
  										2.	เสื้อที่ระลึกและถุง Goodie Bags สั่งผลิตโดยเฉพาะจาก Compressport Asia <br>
@@ -222,18 +253,18 @@ p{
 				</div>
 		</section>
 		<!-- /Section: PRICING -->
-		<section id="team" class="home-section text-center">
+		<section id="team" class="home-section text-center bg-gray">
 			<div class="section-heading">
 				<h2 style="color:#EF3E36">ขั้นตอนการสมัคร</h2>
 			</div>
 			<div class="row gallery-item" >
 				<div class="col-md-12 text" align="center">
-					<a href="img/regis/apply.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/regis/apply.jpg" class="img-responsive" alt="img" width="50%"> </a>
+					 <img src="img/regis/apply.png" class="img-responsive" alt="img" width="60%">
 				</div>
 			</div>
 		</section>
 		<!-- Section: #TEAM -->
-		<section id="team" class="home-section text-center bg-gray">
+		<section id="team" class="home-section text-center">
 			<div class="heading-about">
 				<div class="container">
 					<div class="row">
@@ -252,65 +283,7 @@ GPS 13.606744, 99.663097
 				</div>
 			</div>
 			<div class="container">
-				<div id="googleMap" style="width:80%;height:500px;margin: 0px auto;"></div>
-				<!-- <div class="row">
-					<div class="col-xs-12 col-sm-3 col-md-3">
-
-						<div class="team boxed-grey">
-							<div class="inner">
-								<h5>John Doe</h5>
-								<p class="subtitle">
-									CEO
-								</p>
-								<div class="avatar"><img src="img/team/1.jpg" alt="" class="img-responsive" />
-								</div>
-							</div>
-						</div>
-
-					</div>
-					<div class="col-xs-12 col-sm-3 col-md-3">
-
-						<div class="team boxed-grey">
-							<div class="inner">
-								<h5>Barley Kazurkth</h5>
-								<p class="subtitle">
-									Marketing Director
-								</p>
-								<div class="avatar"><img src="img/team/2.jpg" alt="" class="img-responsive" />
-								</div>
-							</div>
-
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-3 col-md-3">
-
-						<div class="team boxed-grey">
-							<div class="inner">
-								<h5>Sadi Orlaf</h5>
-								<p class="subtitle">
-									Marketing Executive
-								</p>
-								<div class="avatar"><img src="img/team/3.jpg" alt="" class="img-responsive" />
-								</div>
-							</div>
-						</div>
-
-					</div>
-					<div class="col-xs-12 col-sm-3 col-md-3">
-
-						<div class="team boxed-grey">
-							<div class="inner">
-								<h5>Tony Shark</h5>
-								<p class="subtitle">
-									Programmer
-								</p>
-								<div class="avatar"><img src="img/team/4.jpg" alt="" class="img-responsive" />
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div> -->
+				<div id="googleMap" class="col-xs-12 col-md-12" style="width:100%;height:500px;margin: 0px auto;"></div>
 			</div>
 		</section>
 			<section id="features" class="home-section text-center bg-gray">
@@ -326,14 +299,14 @@ GPS 13.606744, 99.663097
 								</p>
 			</div>
 			<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12" style="float:center">
+					<div class="col-sm-12 col-md-12 col-lg-12">
 
 						<div class="row gallery-item">
-							<div class="col-md-6" align="right">
-								<a href="img/works/trav01.png" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/trav01.png" class="img-responsive img-softedge" alt="img" width="540px"> </a>
+							<div class="col-xs-12 col-md-6" class="mdcen" align="right">
+								<a href="img/works/trav01.png" class="popup" title="" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/trav01.jpg"> <img src="img/works/trav01.png" class="img-responsive img-softedge" width="620px" alt="" > </a>
 							</div>
-							<div class="col-md-6">
-								<a href="img/works/trav02.png" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/trav02.png" class="img-responsive img-softedge" alt="img" width="500px"> </a>
+							<div class="col-xs-12 col-md-6" class="mdcen">
+								<a href="img/works/trav02.png" class="popup" title="" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/trav02.jpg"> <img src="img/works/trav02.png" class="img-responsive img-softedge" width="570px" alt="" > </a>
 							</div>
 						</div>
 
@@ -347,51 +320,52 @@ GPS 13.606744, 99.663097
 								<h2>ประเภทการแข่งขัน</h2>
 							</div>
 			<div class="container">
-				<table class="table table-bordered" style="font-size:13pt;	background-color: #000;">
+				<table class="table table-bordered" style="font-size:20pt;	background-color: #000;">
 								<thead>
 									<tr>
-										<th>ระยะทาง</th>
-										<th>กลุ่มอายุ</th>
-										<th>รางวัล</th>
-										<th>จำนวน</th>
+										<th rowspan="2">ระยะทาง</th>
+										<th colspan="2">กลุ่มอายุ</th>
+										<th rowspan="2">รางวัล</th>
+										<th rowspan="2">จำนวน</th>
+									</tr>
+									<tr>
+										<th>ชาย</th>
+										<th>หญิง</th>
 									</tr>
 								</thead>
 								<tbody align="left" style="background-color:#ffffff">
 									<tr>
 										<td>วิ่ง 32 กม. </td>
-										<td><strong>ชาย</strong> 18-29 / 30-39 / 40-49 และ 50 ปีขึ้นไป<br>
-<strong>หญิง</strong> 18-39 และ 40 ปีขึ้นไป
-</td>
+										<td>18-29 <br> 30-39 <br> 40-49 <br> 50 ปีขึ้นไป</td>
+										<td>18-39 <br> 40 ปีขึ้นไป</td>
 										<td>ถ้วยรางวัลสำหรับผู้ชนะ อันดับ 1-5 ของแต่ละรุ่น</td>
 										<td>700 คน</td>
 									</tr>
 									<tr>
 										<td>วิ่ง 21 กม. </td>
-										<td><strong>ชาย</strong> 18-29 / 30-39 / 40-49 และ 50 ปีขึ้นไป<br>
-<strong>หญิง</strong> 18-39 และ 40 ปีขึ้นไป
-</td>
+										<td> 18-29 <br> 30-39 <br> 40-49 <br> 50 ปีขึ้นไป</td>
+										<td> 18-39 <br> 40 ปีขึ้นไป</td>
 										<td>ถ้วยรางวัลสำหรับผู้ชนะ อันดับ 1-5 ของแต่ละรุ่น</td>
 										<td>800 คน</td>
 									</tr>
 									<tr>
 										<td>วิ่ง 10 กม. </td>
-										<td><strong>ชาย</strong> 13-15 / 16-29 / 30-39 / 40-49 / 50-59  และ 60 ปีขึ้นไป <br>
-<strong>หญิง</strong> 13-15 / 16-29 / 30-39 / 40-49 และ 50 ปีขึ้นไป
-</td>
+										<td>13-15 <br> 16-29 <br> 30-39 <br> 40-49 <br> 50-59  <br> 60 ปีขึ้นไป</td>
+										<td>13-15 <br> 16-29 <br> 30-39 <br> 40-49 <br> 50 ปีขึ้นไป</td>
 										<td>ถ้วยรางวัลสำหรับผู้ชนะ อันดับ 1-5 ของแต่ละรุ่น</td>
 										<td>1,500 คน</td>
 									</tr>
 									<tr>
 										<td>เดิน/วิ่ง 3 กม. </td>
 										<td>ไม่แบ่งกลุ่มอายุ</td>
+										<td>ไม่แบ่งกลุ่มอายุ</td>
 										<td>ไม่มีการแข่งขัน</td>
 										<td>ไม่จำกัดจำนวน</td>
 									</tr>
 									<tr>
 										<td>วิ่ง 2 กม. </td>
-										<td><strong>ชาย</strong> 7-8 / 9-10  และ 11-12 ปี <br>
-<strong>หญิง</strong> 7-8 / 9-10  และ 11-12 ปี
-</td>
+										<td> 7-8 <br> 9-10  <br> 11-12 ปี </td>
+										<td> 7-8 <br> 9-10  <br> 11-12 ปี</td>
 										<td>ถ้วยรางวัลสำหรับผู้ชนะ อันดับ 1-3 ของแต่ละรุ่น</td>
 										<td>ไม่จำกัดจำนวน</td>
 									</tr>
@@ -505,45 +479,31 @@ GPS 13.606744, 99.663097
 					</div>
 				</div>
 			</div>
+
 			<div class="container">
 
 				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12" >
 
-						<div class="row gallery-item">
-							<div class="col-md-3">
-								<a href="img/works/PTC04.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC04.jpg" class="img-responsive" alt="img"> </a>
-							</div>
-							<div class="col-md-3">
-								<a href="img/works/PTC02.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC02.jpg" class="img-responsive" alt="img"> </a>
-							</div>
-							<div class="col-md-3">
-								<a href="img/works/PTC03.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC03.jpg" class="img-responsive" alt="img"> </a>
-							</div>
-							<div class="col-md-3">
-								<a href="img/works/PTC01.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC01.jpg" class="img-responsive" alt="img"> </a>
-							</div>
-							<div class="col-md-3">
-								<a href="img/works/PTC05.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC05.jpg" class="img-responsive" alt="img"> </a>
-							</div>
-							<div class="col-md-3">
-								<a href="img/works/PTC06.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC06.jpg" class="img-responsive" alt="img"> </a>
-							</div>
-							<div class="col-md-3">
-								<a href="img/works/PTC07.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC07.jpg" class="img-responsive" alt="img"> </a>
-							</div>
-							<div class="col-md-3">
-								<a href="img/works/PTC10.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC10.jpg" class="img-responsive" alt="img"> </a>
-							</div>
-							<div class="col-md-3">
-								<a href="img/works/PTC11.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC11.jpg" class="img-responsive" alt="img"> </a>
-							</div>
-							<div class="col-md-3">
-								<a href="img/works/PTC08.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC08.jpg" class="img-responsive" alt="img"> </a>
-							</div>
-							<div class="col-md-3">
-								<a href="img/works/PTC09.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"> <img src="img/works/PTC09.jpg" class="img-responsive" alt="img"> </a>
-							</div>
+					<div class="col-sm-12 col-md-12 col-lg-12 gallery-item" >
+
+						<div id="owl-demo" class="owl-carousel">
+							<a href="img/gallery/PTC13.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/gallery/PTC13.jpg" class="popup"><div class="item"><img class="lazyOwl" src="img/gallery/PTC13.jpg" alt=""></div></a>
+							<a href="img/gallery/PTC04.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/gallery/PTC04.jpg" class="popup"><div class="item"><img class="lazyOwl" src="img/gallery/PTC04.jpg" alt=""></div></a>
+							<a href="img/gallery/PTC07.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/gallery/PTC07.jpg" class="popup"><div class="item"><img class="lazyOwl" src="img/gallery/PTC07.jpg" alt=""></div></a>
+							<a href="img/gallery/PTC15.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/gallery/PTC15.jpg" class="popup"><div class="item"><img class="lazyOwl" src="img/gallery/PTC15.jpg" alt=""></div></a>
+							<a href="img/gallery/PTC16.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/gallery/PTC16.jpg" class="popup"><div class="item"><img class="lazyOwl" src="img/gallery/PTC16.jpg" alt=""></div></a>
+							<a href="img/gallery/PTC03.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/gallery/PTC03.jpg" class="popup"><div class="item"><img class="lazyOwl" src="img/gallery/PTC03.jpg" alt=""></div></a>
+							<a href="img/gallery/PTC08.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/gallery/PTC08.jpg" class="popup"><div class="item"><img class="lazyOwl" src="img/gallery/PTC08.jpg" alt=""></div></a>
+							<a href="img/gallery/PTC14.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/gallery/PTC14.jpg" class="popup"><div class="item"><img class="lazyOwl" src="img/gallery/PTC14.jpg" alt=""></div></a>
+							<a href="img/gallery/PTC09.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/gallery/PTC09.jpg" class="popup"><div class="item"><img class="lazyOwl" src="img/gallery/PTC09.jpg" alt=""></div></a>
+							<a href="img/gallery/PTC10.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/gallery/PTC10.jpg" class="popup"><div class="item"><img class="lazyOwl" src="img/gallery/PTC10.jpg" alt=""></div></a>
+							<a href="img/gallery/PTC17.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/gallery/PTC17.jpg" class="popup"><div class="item"><img class="lazyOwl" src="img/gallery/PTC17.jpg" alt=""></div></a>
+							<a href="img/gallery/PTC11.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/gallery/PTC11.jpg" class="popup"><div class="item"><img class="lazyOwl" src="img/gallery/PTC11.jpg" alt=""></div></a>
+							<a href="img/gallery/PTC01.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/gallery/PTC01.jpg" class="popup"><div class="item"><img class="lazyOwl" src="img/gallery/PTC01.jpg" alt=""></div></a>
+							<a href="img/gallery/PTC02.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/gallery/PTC02.jpg" class="popup"><div class="item"><img class="lazyOwl" src="img/gallery/PTC02.jpg" alt=""></div></a>
+						</div>
+
+
 
 						</div>
 
@@ -678,102 +638,7 @@ GPS 13.606744, 99.663097
 									</tr>
 								</tbody>
 							</table>
-				<!-- <div class="row">
-					<div class="timeline-centered">
 
-				<article class="timeline-entry">
-
-					<div class="timeline-entry-inner">
-						<time class="timeline-time" datetime="2014-01-10T03:45"><span> 12.00–17.00</span> <span>18  มิถุนายน 2559</span></time>
-
-						<div class="timeline-icon bg-success">
-							<i class="entypo-feather"></i>
-						</div>
-
-						<div class="timeline-label">
-							<h2>รับหมายเลขการแข่งขัน  เสื้อที่ระลึก และถุงอุปกรณ์</h2>
-
-						</div>
-					</div>
-
-				</article>
-
-
-				<article class="timeline-entry left-aligned">
-
-					<div class="timeline-entry-inner">
-						<time class="timeline-time" datetime="2014-01-10T03:45"><span>03:45 AM</span> <span>4 weeks ago</span></time>
-
-						<div class="timeline-icon bg-secondary">
-							<i class="entypo-suitcase"></i>
-						</div>
-
-						<div class="timeline-label">
-							<h2><a href="#">SmartAdmin goes public!</a></h2>
-							<p>Yahoo buys a share in <strong>SmartAdmin</strong></p>
-						</div>
-					</div>
-
-				</article>
-
-
-				<article class="timeline-entry">
-
-					<div class="timeline-entry-inner">
-						<time class="timeline-time" datetime="2014-01-09T13:22"><span>03:45 AM</span> <span>3 months ago</span></time>
-
-						<div class="timeline-icon bg-info">
-							<i class="entypo-location"></i>
-						</div>
-
-						<div class="timeline-label">
-							<h2><a href="#">SmartAdmin Convention</a> <span>checked in at</span> <a href="#">Laborator</a></h2>
-
-							<blockquote>Place was booked till 3am!</blockquote>
-
-							<img src="img/map.png" alt="map" class="img-responsive">
-
-
-						</div>
-					</div>
-
-				</article>
-
-
-				<article class="timeline-entry left-aligned">
-
-					<div class="timeline-entry-inner">
-						<time class="timeline-time" datetime="2014-01-10T03:45"><span>03:45 AM</span> <span>8 months ago</span></time>
-
-						<div class="timeline-icon bg-warning">
-							<i class="entypo-camera"></i>
-						</div>
-
-						<div class="timeline-label">
-							<h2><a href="#">We have lift off!</a></h2>
-
-							<blockquote>SmartAdmin Launched with grace and beauty</blockquote>
-
-						</div>
-					</div>
-
-				</article>
-
-
-				<article class="timeline-entry begin">
-
-					<div class="timeline-entry-inner">
-
-						<div class="timeline-icon" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
-							<i class="entypo-flight"></i>
-						</div>
-
-					</div>
-
-				</article>
-
-			</div>
-				</div> -->
 			</div>
 		</section>
 		<!-- /Section: UPDATES -->
@@ -824,194 +689,12 @@ GPS 13.606744, 99.663097
 		</section>
 		<!-- /Section: QUOTES -->
 
-		<!-- Section: #CONTACT -->
-		<!-- <section id="contact" class="home-section text-center">
-			<div class="heading-contact marginbot-50">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-lg-offset-2">
 
-							<div class="section-heading">
-								<h2>Get in touch</h2>
-								<p>
-									Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has
-								</p>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-
-				<div class="row">
-					<div class="col-lg-8 col-md-offset-2">
-						<div class="boxed-grey">
-							<form id="contact-form">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label for="name"> Name</label>
-											<input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
-										</div>
-										<div class="form-group">
-											<label for="email"> Email Address</label>
-											<div class="input-group">
-												<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span> </span>
-												<input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
-											</div>
-										</div>
-										<div class="form-group">
-											<label for="subject"> Subject</label>
-											<select id="subject" name="subject" class="form-control" required="required">
-												<option value="">Choose One:</option>
-												<option value="service">General Customer Service</option>
-												<option value="suggestions">Suggestions</option>
-												<option value="product">Product Support</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<label for="name"> Message</label>
-											<textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<div class="col-md-12">
-										<button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
-											Send Message
-										</button>
-									</div>
-								</div>
-							</form>
-						</div>
-
-						<div class="widget-contact row">
-							<div class="col-lg-6">
-								<address>
-									<strong>SMARTADMIN Ltd.</strong>
-									<br>
-									Big Villa 334 Awesome, Beautiful Suite 1200
-									<br>
-									San Francisco, CA 94107
-									<br>
-									<abbr title="Phone">P:</abbr> (123) 456-7890
-								</address>
-							</div>
-
-							<div class="col-lg-6">
-								<address>
-									<strong>Email</strong>
-									<br>
-									<a href="mailto:#">email.name@example.com</a>
-									<br />
-									<a href="mailto:#">name.name@example.com</a>
-								</address>
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-		</section> -->
-		<!-- /Section: CONTACT -->
-
-		<!-- #BOTTOM CONTENT -->
-
-		<!-- /#BOTTOM CONTENT -->
-
-		<!-- #FOOTER -->
-		<!-- <footer>
-
-			<div class="footer-content clearfix">
-				<div class="container custom-container">
-					<div class="row">
-						<div class="col-md-3 col-sm-6 col-xs-12">
-							<a href="#" class="footer-logo">About Us</a>
-							<p>
-								Fusce gravida tortor felis, ac dictum risus sagittis id.
-							</p>
-							<p>
-								Donec volutpat, mi vel egestas eleifend, dolor arcu iaculis nunc. Fusce gravida tortor felis, ac dictum risus sagittis id. Morbi posuere justo eleifend libero ultricies ultrices.
-							</p>
-							<a href="#" class="learn-more">learn more</a>
-						</div>
-						<div class="col-md-3 col-sm-6 col-xs-12">
-							<h3>Recent Tweets</h3>
-							<div class="recent-post clearfix">
-								<div class="footer-thumb-img">
-									<span class="footer-overlay-img"></span>
-								</div>
-								<p>
-									Fusce gravida tortor felis, ac dictum risus sagittis
-									<span class="date">November 15, 2014</span>
-								</p>
-
-							</div>
-							<div class="recent-post clearfix">
-								<div class="footer-thumb-img">
-									<span class="footer-overlay-img"></span>
-								</div>
-								<p>
-									Fusce gravida tortor felis, ac dictum risus sagittis
-									<span class="date">November 11, 2014</span>
-								</p>
-
-							</div>
-							<div class="recent-post clearfix">
-								<div class="footer-thumb-img">
-									<span class="footer-overlay-img"></span>
-								</div>
-								<p>
-									Fusce gravida tortor felis, ac dictum risus sagittis
-									<span class="date">November 10, 2014</span>
-								</p>
-
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 col-xs-12">
-							<h3>Top Tags</h3>
-							<div class="footer-tags">
-								<ul>
-									<li>
-										<a href="#">Web Design</a>
-									</li>
-									<li>
-										<a href="#">Services</a>
-									</li>
-									<li>
-										<a href="#">Landing</a>
-									</li>
-									<li>
-										<a href="#">SmartAdmin</a>
-									</li>
-									<li>
-										<a href="#">.Net</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 col-xs-12">
-							<h3>Flicker photos (recent)</h3>
-							<div class="flicker-widget">
-								<a href="#"></a>
-								<a href="#"></a>
-								<a href="#"></a>
-								<a href="#"></a>
-								<a href="#"></a>
-								<a href="#"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
 			<div class="bottom-footer">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 col-sm-12 col-xs-12 text-center">
-							<p>
+							<p style="font-size:25px">
 								Copyright © 2015 - Khao Prathapchang Trail
 							</p>
 						</div>
@@ -1024,20 +707,11 @@ GPS 13.606744, 99.663097
 		<!-- # Core JavaScript Files -->
 
 		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script>
-			if (!window.jQuery) {
-				document.write('<script src="js/libs/jquery-2.0.2.min.js"><\/script>');
-			}
-		</script>
+		<script src="js/jquery-1.9.1.min.js"></script>
 
-		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-		<script>
-			if (!window.jQuery.ui) {
-				document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
-			}
-		</script>
 
+		<script src="js/owl.carousel.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
 
 		<!-- BOOTSTRAP JS -->
 		<script src="js/bootstrap/bootstrap.min.js"></script>
@@ -1050,90 +724,28 @@ GPS 13.606744, 99.663097
 		<script src="js/plugins/smoothscroll.js"></script>
 		<script src="js/plugins/jquery.themepunch.plugins.min.js"></script>
 		<script src="js/plugins/jquery.themepunch.revolution.min.js"></script>
+		<script src="js/jquery.popup.js"></script>
 
 		<!-- # Custom Theme JavaScript -->
 		<script src="js/custom.js"></script>
 
 		<!-- #PAGE SCRIPT -->
-		<script type="text/javascript">
-			jQuery(document).ready(function() {
+		<script>
+		$(document).ready(function() {
 
-				jQuery('.tp-banner').show().revolution({
-					dottedOverlay : "none",
-					delay : 8000,
-					startwidth : 1170,
-					startheight : 700,
-					hideThumbs : 200,
+			$("#owl-demo").owlCarousel({
 
-					thumbWidth : 100,
-					thumbHeight : 50,
-					thumbAmount : 5,
+				autoPlay: 3000,
 
-					navigationType : "bullet",
-					navigationArrows : "solo",
-					navigationStyle : "preview4",
-
-					touchenabled : "on",
-					onHoverStop : "off",
-
-					swipe_velocity : 0.7,
-					swipe_min_touches : 1,
-					swipe_max_touches : 1,
-					drag_block_vertical : false,
-
-					parallax : "mouse",
-					parallaxBgFreeze : "on",
-					parallaxLevels : [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
-
-					keyboardNavigation : "off",
-
-					navigationHAlign : "center",
-					navigationVAlign : "bottom",
-					navigationHOffset : 0,
-					navigationVOffset : 20,
-
-					soloArrowLeftHalign : "left",
-					soloArrowLeftValign : "center",
-					soloArrowLeftHOffset : 20,
-					soloArrowLeftVOffset : 0,
-
-					soloArrowRightHalign : "right",
-					soloArrowRightValign : "center",
-					soloArrowRightHOffset : 20,
-					soloArrowRightVOffset : 0,
-
-					shadow : 0,
-					fullWidth : "off",
-					fullScreen : "on",
-
-					spinner : "spinner4",
-
-					stopLoop : "off",
-					stopAfterLoops : -1,
-					stopAtSlide : -1,
-
-					shuffle : "off",
-
-					autoHeight : "off",
-					forceFullWidth : "off",
-
-					hideThumbsOnMobile : "off",
-					hideNavDelayOnMobile : 1500,
-					hideBulletsOnMobile : "off",
-					hideArrowsOnMobile : "off",
-					hideThumbsUnderResolution : 0,
-
-					hideSliderAtLimit : 0,
-					hideCaptionAtLimit : 0,
-					hideAllCaptionAtLilmit : 0,
-					startWithSlide : 0,
-					fullScreenOffsetContainer : ""
-				});
-
+				items : 3,
+				lazyLoad : true,
+				navigation : true
 			});
-			//ready
 
-			$.scrollUp();
+		});
+		$(function(){
+			$('a.popup').popup();
+		});
 		</script>
 
 	</body>
